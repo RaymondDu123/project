@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-Ch">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>开始选择</title>
+    <style>
+        @media screen and (max-width:375px) {
+   body{
+        width: 100%;
+        height: 100px;
+    }
+}
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html,body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100%;
+            background-color: #000;
+            background: url(https://www.bing.com/th/id/OGC.e805cd5d8e84a7477e2f12a61c8c6f5b?pid=1.7&rurl=http%3a%2f%2fimg.zcool.cn%2fcommunity%2f01258d59473e7aa8012193a39d85d9.gif&ehk=hmArhA1%2fHA6gz%2bXKmUORZc2zet699QO9ngTKc6BjZRI%3d);
+        }
+        a{
+           position: relative;
+           margin: 40px;
+           padding: 10px;
+           color: #21ebff; 
+           text-transform: uppercase;
+           letter-spacing: 2px;
+           font-size: 20px;
+           transition: .5s;
+           overflow: hidden;
+            
+        }
+        a::before{
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 14px;
+            height: 14px;
+            border-left: 2px solid #21ebff;
+            border-top: 2px solid #21ebff;
+            transition: .5s;
+        }
+        a::after{
+            content: "";
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 14px;
+            height: 14px;
+            border-right: 2px solid #21ebff;
+            border-bottom: 2px solid #21ebff;
+            transition: .5s;
+        }
+       a:hover::before{
+           width: 100%;
+           height: 100%;
+        }
+        a:hover::after{
+           width: 100%;
+           height: 100%;
+        }
+        a:hover{
+            background-color: #21ebff;
+            color: #fff;
+            box-shadow: 0 0 40px #21ebff;
+            transition-delay: .2s;
+            /* -webkit-box-reflect: below 0 linear-gradient(transparent,rgba(0,0,0,.4)); */
+        }
+        a:nth-child(1){
+            filter: hue-rotate(100deg);
+        }
+        a:nth-child(2){
+            filter: hue-rotate(180deg);
+        }
+        a:nth-child(3){
+            filter: hue-rotate(300deg);
+        }
+        a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <a href="https://raymonddu123.github.io/hw8/">成仙</a>
+        <a href="https://raymonddu123.github.io/hw7/">成魔</a>
+        <a href="https://baike.baidu.com/item/%E4%BA%BA/13020851">成人</a>
+        <a href="https://baike.baidu.com/item/%E7%B2%BE%E7%81%B5/2779097">成精灵</a>
+    </div>
+</body>
+</html>

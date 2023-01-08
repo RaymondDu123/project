@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none; /*去掉列表默认样式*/
+    text-decoration: none; /*去掉文字默认样式*/
+  }
+  /* 响应式布局 */
+@media screen and (max-width:375px) {
+  body{
+       width: 100%;
+       height: 100px;
+   }
+}
+main{
+  margin: 0 auto;
+}
+.main{
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color:rgba(0, 0, 0, 0.7) ;
+  overflow-x: hidden;
+  padding-top: 200px;
+}
+.main a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+.main a:hover {
+  color: #f1f1f1;
+  background-color:black
+
+}
+.w{
+  width: 1200px;
+  margin: 0 auto;
+}
+  .f img{
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    right: 20px;
+    bottom: 100px;
+    z-index: 2;
+  }
+  nav {
+    position: absolute; /*固定导航栏位置*/
+  }
+  nav ul{
+    margin: 0 auto;
+    list-style: none;
+    display: flex;
+    width: 500px;
+    height: 100%;
+  }
+  nav ul  a img{
+    display: flex;
+  }
+
+  nav a {
+    color: #6c6c6c;
+    padding: 0.5em 1em;
+  }
+  nav a:hover {
+    color: #ff4400;
+  }
+
+  nav ul li a:link,
+  nav ul li a:visited {
+    /*单个菜单的具体属性*/
+    display: block;
+    width: 238px;
+    height: 100%;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+    font-size: 22px;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  nav ul li a:hover,
+  nav ul li a:active {
+    /*设定鼠标点击 移动过的属性*/
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  nav ul li ul {
+    /* 二级菜单整体设定   */
+    display: none; /* 隐藏二级菜单列表*/
+    position: absolute; /*二级菜单的位置固定*/
+  }
+  nav ul li:hover ul {
+    display: block; /*二级菜单  将显示为块级元素*/
+    width: auto; /*消除二级菜单的滚动条，因为继承了父级的宽度*/
+  }
+  nav ul li ul li {
+    float: none; /*消除二级菜单的浮动*/
+    background-color: rgba(0, 0, 0, 0.3);
+    width: auto;
+  }
+  .nav{
+    background-image: url(https://img.crawler.qq.com/lolwebschool/0/JAutoCMS_LOLWeb_246b1299e27822569a27331ddb83856c/0);
+    height: 92px;
+    width: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  nav{
+    position: absolute;
+  }
+  body{
+    background-repeat: no-repeat;
+        background-image: url(https://shp.qpic.cn/ishow/2735122318/1671790785_1265602313_10943_sProdImgNo_3.jpg/0);
+        background-size: 100% 100%;
+        margin: 0px;
+        background-attachment: fixed;
+        background-position: bottom;
+  }
+  .shou a{
+      color:aquamarine;
+      font-size: 20px;
+      margin: 40px 20px;
+      font-weight: 700;
+      margin-left: 0;
+  }
+  .shou a :hover{
+    color: #00ffd0;
+  }
+  .x{
+    margin-top: 15px;
+    color: #010101;
+    font: 900;
+    margin-bottom: 20px;
+  }
+  .course ul li{
+    float: left;
+    width: 215px;
+    height: 120px;
+    background-color: aliceblue;
+    margin-right: 20px;
+  }
+  .course div{
+    text-align: center;
+    margin-top: 5px;
+  }
+  .cours ul li{
+    float: left;
+    width: 215px;
+    height: 120px;
+    background-color: aliceblue;
+    margin-right: 20px;
+  }
+  .cours div{
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 25px;
+  }
+  .cours{
+    margin-bottom: 45px;
+  }
+  .course{
+    margin-bottom: 50px;
+  }
+.p
+{
+  margin-top: 50px;
+  float: left;
+  overflow: hidden;
+
+}
+.p img{
+  margin-left: 10px;
+  transition: all 0.4s;
+  cursor: pointer;
+  border: #eee solid 1px;
+}
+.p img :hover{
+  transform: scale(1.5);
+
+}
+.bottom{
+  display: block;
+  background-color:#ccc;
+  height: 200px;
+  clear: both;
+}
+.bottom .w p{
+  display: block;
+  text-align: center;
+  color:#fff;
+  margin: 8px auto;
+}
+.bottom .w a{
+  display: block;
+  text-align: center;
+  color:#fff;
+  margin: 8px auto;
+
+}
+
+  

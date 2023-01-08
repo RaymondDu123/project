@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="zh-Ch">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>选择页面</title>
+   
+</head>
+<style>
+    /* 响应式布局 */
+@media screen and (max-width:375px) {
+   body{
+        width: 100%;
+        height: 100px;
+   }
+}
+a{
+  text-decoration: none;
+}
+  /* 导航条 */
+  .nav {
+        width: 1000px;
+        height: 44px;
+        background-color: rgb(3, 3, 2);
+        margin: 0 auto;
+        border-radius: 5px;
+      }
+      
+      /* 整个导航栏的宽高 */
+      .nav .menu {
+        width: 1000px;
+        /* 导航栏居中 */
+        margin: 0 auto;
+        height: 100%;
+        box-sizing: border-box;
+        
+      }
+      .nav ul{
+        list-style: none;
+        width: 1000px;
+        height: 44px;
+        line-height: 44px;
+        display: flex;
+      }
+      .nav ul li {
+        flex: 1;
+        text-align: center;
+        color: white;
+        font-weight: bold;
+      }
+      
+      .nav ul li a:visited{
+        display: inline-block;
+        width: 238px;
+        height: 40px;
+        line-height: 40px;
+        color: #fff;
+        text-align: center;
+        background: lightskyblue;
+      }
+      /* 设置菜单项里文字点击的效果颜色 */
+      .nav ul li a:hover,
+      .nav ul li a:active {
+        background: lightskyblue;
+        border-bottom: 3px solid red;
+        padding-bottom: 4px;
+        color: red;
+       
+      }
+      
+      /* 隐藏二级菜单 */
+      .nav ul li ul {
+        display: none;
+        position: absolute;
+      }
+      
+      /* 让二级菜单在点击一级菜单项时才会出现 */
+      .nav ul li:hover ul {
+        display: block;
+        
+      }
+      
+      /* 清除二级菜单的浮动 */
+      .nav ul li ul li {
+        float: none;
+        width: 100px;
+        background: lightskyblue;
+        
+      }
+      div .ji{
+        position: absolute;left: 520px;top: 150px;color: rgba(250, 4, 4, 0.377);
+        font-size: 45px;
+        font-weight: 800;
+        
+      } 
+      
+      /* 链接 - 修改颜色 */
+      .nav li:hover {
+        background-color: #ddd;
+        color: red;
+      
+      }
+    body{
+        background-repeat: no-repeat;
+        background-image: url(https://tse1-mm.cn.bing.net/th/id/OIP-C.cY721uNv_STdOfNMSfzvGQHaDy?w=301&h=178&c=7&r=0&o=5&dpr=1.3&pid=1.7);
+        background-size: 100% 100%;
+        margin: 0px;
+        background-attachment: fixed;
+    }
+    tr td a{
+    text-decoration: none;
+   }
+    ul li{
+        list-style: none;
+    }
+    h1{
+        text-align: center;
+    }
+    h3{
+        text-align: center;
+    }
+    .button a{
+  position: relative;
+  background: #ecd300;
+  background: radial-gradient(hsl(54, 100%, 50%), hsl(54, 100%, 40%));
+  font-size: 1.9rem;
+  text-shadow: 0 -1px 0 #c3af07;
+  color: white;
+  border: 1px solid hsl(54, 100%, 20%);
+  border-radius: 100%;
+  height: 120px;
+  width: 120px;
+  z-index: 4;
+  outline: none;
+
+  box-shadow: inset 0 1px 0 hsl(189, 100%, 50%),
+              0 2px 0 skyblue,
+              0 3px 0 skyblue,
+              0 4px 0 hsl(54, 100%, 16%),
+              0 5px 0 hsl(54, 100%, 14%),
+              0 6px 0 hsl(54, 100%, 12%),
+              0 7px 0 hsl(54, 100%, 10%),
+              0 8px 0 hsl(54, 100%, 8%),
+              0 9px 0 hsl(54, 100%, 6%);
+         color: rgb(0, 200, 255);    
+}
+.button a :hover{
+    color: aquamarine;
+}
+.report img{
+  position: relative;
+  width: 500px;
+  height: 250px;
+  left: 380px;
+  top: 40px;
+}
+.report a{
+  position: absolute;
+  color: skyblue;
+  left:550px;
+  top: 650px;
+  z-index: 2;
+  font-size: 20px;
+  border: skyblue solid 1px;
+  font-weight: 900;
+}
+.sider img{
+  position: fixed;
+  right: 20px;
+  bottom: 200px;
+  width: 200px;
+  height: 150px;
+}
+.sidel img{
+  position: fixed;
+  left: 20px;
+  bottom: 200px;
+  width: 200px;
+  height: 150px;
+}
+
+    
+    
+</style>
+
+<body >
+    
+    <div class="nav">
+        <ul class="menu">
+          <li>首页</li>
+          <li>
+            生活
+            <ul>
+              <li><a href="#">婚姻</a></li>
+              <li><a href="#">工作</a></li>
+              <li><a href="#">学习</a> </li>
+            </ul>
+          </li>
+          <li>
+            德行
+            <ul>
+              <li><a href="#">善事</a></li>
+              <li><a href="#">坏事</a></li>
+              <li><a href="#">伟事</a></li>
+            </ul>
+          </li>
+          <li>
+            头衔
+            <ul>
+              <li><a href="#">伟人</a></li>
+              <li><a href="#">善人</a></li>
+              <li><a href="#">小人</a></li>
+            </ul>
+          </li>
+          <li>
+            主要亲戚
+            <ul>
+              <li><a href="#">王大妈</a></li>
+              <li><a href="#">赵大爷</a></li>
+              <li><a href="#">毛大爷</a></li>
+            </ul>
+          </li>
+          <li>
+            人生经历
+            <ul>
+              <li><a href="#">童年</a></li>
+              <li><a href="#">壮年</a></li>
+              <li><a href="#">中年</a></li>
+            </ul>
+          </li>
+          <li>
+            工作
+            <ul>
+              <li><a href="#">种地</a></li>
+              <li><a href="#">读书</a></li>
+              <li><a href="#">政治家</a></li>
+            </ul>
+          </li>
+          <li>
+            财富来源
+            <ul>
+              <li><a href="#">靠勤劳获得</a></li>
+              <li><a href="#">贿赂贪污</a></li>
+              <li><a href="#">动用公款</a></li>
+            </ul>
+          </li>
+          <li>
+            审判
+            <ul>
+              <li><a href="#">天堂</a></li>
+              <li><a href="#">地狱</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+    <h1><em>人生的选择</em></h1>
+    <table align="center">
+        <tr>
+            <td>
+                性别:
+            </td>
+            <td>
+                <input type="radio" id="nan" name="sex"> <label for="nan"><img src="https://tse4-mm.cn.bing.net/th/id/OIP-C.jtGMeMiKC_10NyTssJW92AAAAA?w=142&h=150&c=7&r=0&o=5&dpr=1.3&pid=1.7" width="50">男</label>
+                <input type="radio" id="nv" name="sex"> <label for="nv"> <img src="data:image/jpeg;base64,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" width="50">女</label>
+            </td>
+        </tr>
+        <tr>
+            <td>生日:</td>
+            <td>
+                <select>
+                    <option>--请选择年--</option>
+                    <option> 2000</option>
+                    <option>2001</option>
+                    <option>2002</option>
+                    <optio>2002</option>
+                    <option>2003</option>
+                    <option>2004</option>
+                    <option>2005</option>
+                    <option>2006</option>
+                    <option>2007</option>
+                </select>
+
+
+                <select>
+                    <option>--请选择月--</option>
+                    <option> 1月</option>
+                    <option>2月</option>
+                    <option value="">3月</option>
+                    <option value="">4月</option>
+                    <option value="">5月</option>
+                    <option value="">6月</option>
+                    <option value="">7月</option>
+                    <option value="">8月</option>
+                    <option value="">9月</option>
+                    <option value="">10月</option>
+                    <option value="">11月</option>
+                    <option value="">12月</option>
+                </select>
+
+
+                <select>
+                    <option>--请选择日--</option>
+                    <option value="">1日</option>
+                    <option value="">2日</option>
+                    <option value="">3日</option>
+                    <option value="">4日</option>
+                    <option value="">5日</option>
+                    <option value="">6日</option>
+                    <option value="">7日</option>
+                    <option value="">8日</option>
+                    <option value="">9日</option>
+                    <option value="">...</option>
+                    <option> 27日</option>
+                    <option>28日</option>
+                </select>
+            </td>
+
+        </tr>
+        <tr>
+            <td>所在地区:</td>
+            <td><input type="text" maxlength="10" value="输入一个地区"></td>
+            <td></td>
+            <td></td>
+
+
+        </tr>
+        <tr>
+            <td>国籍:</td>
+            <td><input type="radio" name="satuation">中国
+                <input type="radio" name="satuation">美国
+                <input type="radio" name="satuation">澳大利亚
+            </td>
+        </tr>
+        <tr>
+            <td>
+                学历:
+            </td>
+            <td>
+                <input type="text">
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+                类型:
+            </td>
+            <td>
+                <input type="checkbox">可爱的
+           
+                <input type="checkbox">小鲜肉
+            
+                <input type="checkbox">老腊肉
+            </td>
+        </tr>
+        <tr>
+            <td>人生经历:</td>
+            <td><textarea name="123" cols="22" rows="2"></textarea></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>选择兑换码</td>
+            <td><input type="password"></td>
+        </tr>
+        <tr>
+            <td></td>
+            
+            <td><input type="checkbox">喝下孟婆汤选择重生</td>
+            
+    
+        </tr>
+        <tr>
+            <td></td>
+            
+            <td><input type="checkbox">对自己的选择负责任</td>
+            
+    
+        </tr>
+        <tr>
+            <td></td>
+            
+            <td><div class="button"><a href="https://raymonddu123.github.io/hw9/">选择道路</a></div></td>
+            
+    
+        </tr>
+        
+    </table>
+    <div class="report"><img src="https://tse4-mm.cn.bing.net/th/id/OIP-C.joQ6JcZDcZC6QCN-ofhSWAHaEo?w=236&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="">
+<a href="https://raymonddu123.github.io/hw11/">网页报告报告click</a></div>
+<div class="sider"><img src="https://gss0.baidu.com/7Po3dSag_xI4khGko9WTAnF6hhy/zhidao/wh%3D600%2C800/sign=0f288fb14d086e066afd374d323857cc/b7fd5266d01609241ca9b19bd50735fae7cd34a5.jpg" alt=""></div>
+<div class="sidel"><img src="https://www.bing.com/th/id/OGC.015a3045f90bf2956944e0e59bf2d5fd?pid=1.7&rurl=https%3a%2f%2fgss0.baidu.com%2f9vo3dSag_xI4khGko9WTAnF6hhy%2fzhidao%2fpic%2fitem%2fd058ccbf6c81800a6895859bb03533fa828b4736.jpg&ehk=hj7sc6cwh2lAyPxTVf4hi0pPYr5fUV8ImawNIpwGjqk%3d" alt=""></div>
+</body>
+
+</html>

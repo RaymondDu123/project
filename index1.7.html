@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>网页报告</title>
+        <style>
+            /* 响应式布局 */
+            @media screen and (max-width:375px) {
+                body {
+                    width: 100%;
+                    height: 100px;
+                }
+            }
+            *a{
+                margin: 0;
+                padding: 0;
+            }
+
+            .header h1 {
+                text-align: center;
+                color:tomato;
+                text-shadow: 2px 3px 1px skyblue;
+                font-weight: 900;
+            }
+
+            body {
+                background-image: url(https://photo.16pic.com/00/92/32/16pic_9232307_b.jpg);
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                background-attachment: fixed;
+            }
+
+            .h2 {
+                text-align: center;
+                font-size: 15px;
+                color: cyan;
+            }
+            .w{
+  width: 1200px;
+  margin: 0 auto;
+}
+p{
+    font-size: 15px;
+   color:deepskyblue;
+}
+ol li{
+    color: aquamarine;
+}
+.img
+img{
+    width: 1150px;
+    height: 500px;
+
+}
+.pic{
+    width: 1170px;
+    height: 520px;
+    background: skyblue;
+}
+.pic img{
+    display: block;
+    margin: 10px;
+    box-direction: 2px solid #efefef;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27);
+}
+.footer img{
+    max-width: 100%;
+   background-size: 100% 100%;
+   margin-left: 160px;
+}
+.fix img{
+    position: fixed;
+    width: 180px;
+    height: 180px;
+    right: 2px;
+    top: 30px;
+}
+.fixed img{
+   position: relative;
+    width: 180px;
+    height: 180px;
+    left: 2px;
+    bottom: 30px;
+}
+.fi img{
+    position: fixed;
+    width: 180px;
+    height: 180px;
+    right: 2px;
+    bottom: 30px;
+}
+        </style>
+    </head>
+
+    <body><div class="w">
+        <div class="header">
+            <h1>网页报告</h1>
+            <div class="h2">
+                <h2>人员信息</h2>
+            </div>
+            <p><em>组长</em>:杜雷豪</p><br>
+                <p><em>人数</em>:1</p><br>
+                <p><em>学号</em>:0223387</p><br>
+                <p><em>班级</em>:软件工程2211班</p>
+            <div class="h2"><h2>网站介绍</h2></div>
+            <p><em>名称</em>:选择人生</p>
+            <br>
+            <p><em>主题</em>:如果给你一次重生的机会,你会选择?</p>
+            <br>
+            <P><em>动机</em>:有两条路摆在你面前,你会选择哪一条?fighting or 摆烂?</P>
+            <div class="h2"><h2>网站设计</h2></div>
+            <p><em>内容板块</em>:header,main,footer,bottom,table,course,banner,无序列表,表单</p><br>
+            <p><em>页面组织结构</em>:线性结构(导航栏,内容,正文,结束区,广告)</p><br>
+            <p><em>页面引导:</em>
+            <ol><li>点击主页面开始选择进入<开始选择>界面</li>
+                <li>点击主页图片中的文字链接<网页报告click>进入选择页面</li>
+            <li>点击<成魔>进入<子页面>游戏界面,点击<成仙>进入<子页面>学习网站</li>
+        <li>点击成魔界面"商城/合作"<二级导航>中的<皮服>进入<子页面>精美图片展示界面</li>
+    </ol>
+        </p><br>
+        <div class="h2"><h2>网站内容</h2></div>
+        <p><em>主要技术:</em><ol>
+            <li>手机自适应(适配)</li>
+            <li>主页面立体边框</li>
+            <li>圆角边框,少部分flex布局</li>
+            <li><开始选择界面>采用炫酷动画边框</li>
+        <li><成仙>页面右下角fixed定位采用四角边框</li>
+    <li><皮肤>界面采用图片鼠标悬停图片自动放大并显示mask层</li></ol></p>
+    <div class="img">
+        <div class="pic"><img src="主页面.png" alt=""></div>
+        <div class="pic"><img src="选择页面.png" alt=""></div>
+            <div class="pic"><img src="学成.png" alt=""></div>
+            <div class="pic"><img src="游戏.png" alt=""></div>
+            <div class="pic"><img src="皮肤展示.png" alt=""></div>
+    </div>
+    <p><em>主要工具:</em>visual stdio</p>
+    <p><em>主要内容与步骤:</em>带着前世的记忆,喝下孟婆汤开始选择新的人生,成仙,进入知识的海洋卷起惊涛骇浪?成人,重新投胎?成魔,掉入游戏的深渊堕落?成精灵,守护着世间元素?</p>
+    <p><em>失败部分:</em></p>
+    <ol><li>想给图片设计曲线阴影和翘边阴影没成功</li>
+    <li>
+        制作炫酷的二级导航栏失败
+    </li>
+<li>
+    有些动画坍塌没使用,flex布局只用了一点点
+</li></ol>
+    <p><em>遇到问题:</em>js不熟悉,很多技巧只知道一点点,边框动画效果和悬浮放大花了好长时间做</p>
+    <p><em>亮点</em></p>
+    <ol><li>手机自适应(适配)</li>
+            <li>主页面立体边框</li>
+            <li>圆角边框,少部分flex布局</li>
+            <li><开始选择界面>采用炫酷动画边框</li>
+        <li><成仙>页面右下角fixed定位采用四角边框</li>
+    <li><皮肤>界面采用图片鼠标悬停图片自动放大并显示mask层</li></ol>
+    <div class="h2"><h2>最终讨论结果</h2></div>
+    <p><em>自我评价与总结:</em>花费10多天的时间边学边做,做得比较慢,还是比较有耐心,但是也体现不够熟练,要更加努力,在排版方面要注意,注意子绝父相,清楚浮动等...但是这是我比较满意的一次作品,它让我们明白选择的重要性,让我学到很多新的知识.</p>
+    <p><em>展望:</em>希望在以后能在网页设计中如鱼得水,自由发挥,使用js设计出更炫酷的网页.</p>
+        <div class="h2"><h2>最后非常感谢辜勇老师的耐心教导!</h2><br>
+        <h2 style="color: red;">提前祝老师新年快乐!</h2>
+    <h2 style="color: red;">(●'◡'●)</h2></div>
+    </div>
+        </div>
+<div class="footer"><div class="w"><img src="https://www.bing.com/th/id/OGC.703f2e01c764d30a757e380774ae9180?pid=1.7&rurl=https%3a%2f%2fimg95.699pic.com%2fphoto%2f40166%2f3764.gif_wh860.gif&ehk=LXY3tkGUVS0N0oqxgOYCMv7QvaU1cPxP1QdWINtuQG4%3d" alt=""></div></div>
+<div class="fix"><img src="https://www.bing.com/th/id/OGC.122acedfd9693053d239a7acb3935f54?pid=1.7&rurl=http%3a%2f%2fwww.gx8899.com%2fuploads%2fallimg%2f160727%2f3-160HG00032.gif&ehk=YqnfEqls7LpfbY1oJSLVuf7JubrukH6AyIIkUDLF9zY%3d" alt=""></div>
+<div class="fixed"><img src="https://www.bing.com/th/id/OGC.ab2223fc28d7051af6d0089cf51eb824?pid=1.7&rurl=https%3a%2f%2fgss0.baidu.com%2f9vo3dSag_xI4khGko9WTAnF6hhy%2fzhidao%2fpic%2fitem%2f7aec54e736d12f2e703f235e4ec2d562853568d2.jpg&ehk=ra%2fNq8hZpB5nFAmR0OOfhRUYVdySJGQc3If1FimA7Xs%3d" alt=""></div>
+<div class="fi"><img src="https://gss0.baidu.com/-fo3dSag_xI4khGko9WTAnF6hhy/zhidao/wh%3D600%2C800/sign=bdf4ac42500fd9f9a0425d6f151df812/b151f8198618367a8cb8fce32f738bd4b31ce5df.jpg" alt=""></div>
+    </body>
+
+</html>
